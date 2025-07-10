@@ -10,11 +10,11 @@
   <title>Document</title>
 </head>
 
-<body class="bg-success">
+<body class="bg-info">
 
   <div class="container mt-5">
     <h1 class="text-center text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-    <div class="row mt-4 bg-secondary rounded shadow">
+    <div class="card-body h-100 mt-4 rounded bg-light shadow">
       <form class="row g-3 justify-content-center">
 
         <div class="col col-2 text-center">
@@ -37,7 +37,6 @@
         </div>
 
 
-
         <div class="row mt-5 justify-content-center">
 
           <div class="col-auto">
@@ -52,27 +51,50 @@
 
 
 
-    <div class="row">
+    <div class="row mt-5 ">
+      <h1 class="text-center text-white">IL TUO BIGLIETTO</h1>
       <div class="col-12">
 
-        <div class="card h-100">
+        <div class="card h-100 shadow">
           <div class="card-header">DETTAGLIO PASSEGERI</div>
           <div class="card-body">
             <div class="row">
               <div class="col-4">
 
+                <div class="col-12 m-2">
+                  <h4>NOME PASSEGGERO</h4>
+                  <p class="fs-5" id="show-nome"></p>
+                </div>
               </div>
               <div class="col-8">
 
+                <div class="col-12 m-2 d-flex flex-row justify-content-center">
+                  <div class="mx-3">
+                    <h5>Numero biglietto</h5>
+                    <span class="fs-5" id="show-random-ticket"></span>
+                  </div>
+                  <div class="mx-3">
+                    <h5>Chilometri da percorrere</h5>
+                    <span class="fs-5" id="show-chilometri"></span>
+                  </div>
+                  <div class="mx-3">
+                    <h5>Fascia d'età</h5>
+                    <span class="fs-5" id="show-age"></span>
+                  </div>
+                  <div class="mx-3">
+                    <h5>Prezzo</h5>
+                    <span class="fs-5" id="show-price"></span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
-
     </div>
+
   </div>
+
 
 
 

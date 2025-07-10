@@ -31,6 +31,7 @@ button.addEventListener(`click`, (e) => {
   const chilometri = parseFloat(document.getElementById(`inputKilo`).value);
   const select = document.getElementById(`inputAge`);
   const eta = select.value;
+  const etaText = select.options[select.selectedIndex].text;
 
   const ticket = parseInt(chilometri * 0.21);
 
@@ -46,5 +47,17 @@ button.addEventListener(`click`, (e) => {
 
   console.log(`Nome: ${nome}, Prezzo: €${price}`);
 
+  function randomIntFromInterval(min, max) { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
+  const rndInt = randomIntFromInterval(1, 10000);
+  console.log(rndInt);
+
+  document.getElementById(`show-nome`).innerText = nome;
+  document.getElementById(`show-chilometri`).innerText = chilometri;
+  document.getElementById(`show-age`).innerText = etaText;
+  document.getElementById(`show-price`).innerText = `€ ` + price;
+  document.getElementById(`show-random-ticket`).innerText = `# ` + rndInt;
 
 })
