@@ -14,8 +14,8 @@
 
   <div class="container mt-5">
     <h1 class="text-center text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-    <div class="row mt-4 bg-secondary">
-      <div class="row g-3 justify-content-center">
+    <div class="row mt-4 bg-secondary rounded shadow">
+      <form class="row g-3 justify-content-center">
 
         <div class="col col-2 text-center">
 
@@ -24,11 +24,11 @@
         </div>
         <div class="col col-2 text-center">
           <label for="inputKilo" class="mb-2">Km da percorrere</label>
-          <input type="number" class="form-control" id="inputKilo" placeholder="Chilometri">
+          <input type="text" class="form-control" id="inputKilo" placeholder="Chilometri">
         </div>
         <div class="col col-2 text-center">
           <label for="inputAge" class="mb-2">Fascia d'età</label>
-          <select class="form-select" aria-label="Default select example">
+          <select class="form-select" id="inputAge" aria-label="Default select example">
             <option selected>Scegli fascia età</option>
             <option value="1">Minorenne</option>
             <option value="2">Maggiorenne</option>
@@ -37,20 +37,47 @@
         </div>
 
 
+
         <div class="row mt-5 justify-content-center">
 
           <div class="col-auto">
-            <button type="submit" class="btn btn-success mb-3">Genera</button>
+            <button type="submit" id="genera" class="btn btn-success mb-3">Genera</button>
           </div>
           <div class="col-auto">
-            <button type="submit" class="btn btn-danger mb-3">Annulla</button>
+            <button type="submit" id="annulla" class="btn btn-danger mb-3">Annulla</button>
           </div>
         </div>
+      </form>
+    </div>
 
-        </form>
 
+
+    <div class="row">
+      <div class="col-12">
+
+        <div class="card h-100">
+          <div class="card-header">DETTAGLIO PASSEGERI</div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4">
+
+              </div>
+              <div class="col-8">
+
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <script src="script.js"></script>
+
+    </div>
+  </div>
+
+
+
+
+  <script src="script.js"></script>
 </body>
 
 </html>
